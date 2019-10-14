@@ -12,7 +12,7 @@
     <artifactId>freshman</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>freshman</name>
-    <description>apollo dubbo for springb boot</description>
+    <description>demo</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -33,6 +33,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.61</version>
         </dependency>
     </dependencies>
 
