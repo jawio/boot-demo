@@ -31,11 +31,11 @@ public class ApiDemo {
         System.out.println(apiData);
         System.out.println(apiData.getRows().size());
 
-        apiData.getRows().parallelStream().forEach(t->{
-            StringBuffer sb= new StringBuffer("| ");
-            sb.append(t.getAppName()+" | ")
-                    .append(t.getApiName()+"_"+t.getApiVersion()+" | ")
-                    .append(t.getDescription()+" |");
+        apiData.getRows().parallelStream().forEach(t -> {
+            StringBuffer sb = new StringBuffer("| ");
+            sb.append(t.getAppName() + " | ")
+                    .append(t.getApiName() + "_" + t.getApiVersion() + " | ")
+                    .append(t.getDescription() + " |");
             System.out.println(sb);
         });
     }

@@ -59,7 +59,6 @@ public class LocalDateDemo {
         System.out.println(copyLocal);
 
 
-
         LocalDate date = LocalDate.now();
         DayOfWeek dotw = date.getDayOfWeek();
         System.out.printf("%s is on a %s%n", date, dotw);         // 2016-07-11 is on a MONDAY

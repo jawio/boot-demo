@@ -26,22 +26,28 @@ public class ASMDemo {
 
 //    }
 
-    static abstract class Human{
+    static abstract class Human {
     }
-    static class Man extends Human{
+
+    static class Man extends Human {
     }
-    static class Woman extends Human{
+
+    static class Woman extends Human {
     }
-    public void sayHello(Human guy){
+
+    public void sayHello(Human guy) {
         System.out.println("hello,guy!");
     }
-    public void sayHello(Man guy){
+
+    public void sayHello(Man guy) {
         System.out.println("hello,gentleman！");
     }
-    public void sayHello(Woman guy){
+
+    public void sayHello(Woman guy) {
         System.out.println("hello,lady！");
     }
-    public static void main(String[]args) {
+
+    public static void main(String[] args) {
         Human man = new Man();
         Human woman = new Woman();
         ASMDemo sr = new ASMDemo();

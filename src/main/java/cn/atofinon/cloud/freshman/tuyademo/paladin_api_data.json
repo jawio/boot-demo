@@ -200,7 +200,6 @@
       "operator": "gwweb",
       "tags": null
     },
-
     {
       "id": 2572,
       "description": "excel导出",
@@ -401,7 +400,6 @@
       "operator": "gwweb",
       "tags": null
     },
-
     {
       "id": 2441,
       "description": "获取渠道列表",
@@ -602,7 +600,6 @@
       "operator": "",
       "tags": null
     },
-
     {
       "id": 2403,
       "description": "安防紧急联系人更新",
@@ -803,7 +800,6 @@
       "operator": "",
       "tags": null
     },
-
     {
       "id": 2339,
       "description": "获取monitoring倒计时",
@@ -1004,7 +1000,6 @@
       "operator": "",
       "tags": null
     },
-
     {
       "id": 2228,
       "description": "获取北美地区",

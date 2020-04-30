@@ -15,6 +15,6 @@ import java.util.List;
 @Data
 public class ApiData {
 
-   private List<APIObj> rows;
+    private List<APIObj> rows;
 
 }

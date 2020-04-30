@@ -76,7 +76,7 @@ public class OptionalDemo {
          * 如果没有值将执行传入参数 Supplier 函数接口
          * if the value present return the value
          */
-        System.out.println(noEmptyOpt.orElseGet(()-> "other value"));
+        System.out.println(noEmptyOpt.orElseGet(() -> "other value"));
         System.out.println(mayBeNullOpt.orElseGet(() -> "other value"));
 
 
