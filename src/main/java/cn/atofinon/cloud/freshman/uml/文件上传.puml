@@ -1,0 +1,39 @@
+!includeurl https://raw.githubusercontent.com/xuanye/plantuml-style-c4/master/core.puml
+
+
+@startuml
+autonumber
+title __alarm__ file upload
+footer 1/1
+
+actor web
+control cloud
+database oss
+
+ == 上传 ==
+web-[#red]>cloud: 请求文件上传参数
+activate cloud
+cloud-[#0000FF]->web: 返回文件上传的参数
+note right:核心数据：token和url
+
+web-[#red]>oss: 上传文件
+activate oss
+alt success
+web-[#red]>cloud: 回调云端接口，同步上传结果
+cloud-[#blue]>oss: 把文件从临时目录转存至安防bucket
+deactivate oss
+==试听==
+web-[#red]>cloud: 请求文件url
+return url
+
+deactivate cloud
+|||
+web->web: 打开文件在线试听
+|||
+else failure
+
+web->>web: 提示失败
+
+end
+
+@enduml

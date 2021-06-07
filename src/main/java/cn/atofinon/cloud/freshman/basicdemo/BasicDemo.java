@@ -14,7 +14,7 @@ import java.util.List;
 public class BasicDemo {
 
     public static void main(String[] args) {
-        List<String> strList = Lists.newArrayList("A","B","C","D");
+        List<String> strList = Lists.newArrayList("A", "B", "C", "D");
 
         System.out.println(strList.get(-1));
     }
